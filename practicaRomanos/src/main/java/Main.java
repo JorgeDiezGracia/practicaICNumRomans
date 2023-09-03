@@ -1,6 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        //Práctica de tests unitarios y TDD con maven
-        System.out.println("Ejercicio2Maven");
+        
+    Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce un número del 1 al 3000:");
+        int num = Integer.parseInt(teclado.nextLine());
+
+        ConversionARomanos conversor = new ConversionARomanos();
+        System.out.println(conversor.conversionNumero(num));
     }
 }
